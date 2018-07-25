@@ -5,6 +5,7 @@ function someFunc(string $str) : string {
   return $str." GOTCHA :D ";
 }
 
-echo someFunc("333");
-
+// echo someFunc("333");
+// echo "<br>";
+echo date("l, Y-m-d h:i:s a")
 ?>
