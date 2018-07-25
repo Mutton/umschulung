@@ -21,8 +21,8 @@ function someFunc (string $str) : string {
   return $str." GOTCHA :D ";
 }
 
-$shellCommand = "dir";
-$shellResult = shell_exec($shellCommand);
+$shellCommand = "ls";
+$shellResult = shell_exec($shellCommand) ?? "NULL";
 
 echoNewLine(false,
   date("l, Y-m-d h:i:s a"),
