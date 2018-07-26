@@ -21,7 +21,7 @@ function someFunc (string $str) : string {
   return $str." GOTCHA :D ";
 }
 
-$shellCommand = "ls";
+$shellCommand = "lshw";
 $shellResult = shell_exec($shellCommand) ?? "NULL";
 
 echoNewLine(false,
