@@ -17,15 +17,22 @@ function echoNewLine (bool $leadingNewLine, string ...$strings) {
   }
 }
 
-function someFunc (string $str) : string {
+$someFunc = function (string $str) : string {
   return $str." GOTCHA :D ";
-}
+};
 
-$shellCommand = "lshw";
-$shellResult = shell_exec($shellCommand) ?? "NULL";
+$shellCommand = "npm --version";
+$shellResult = shell_exec($shellCommand);
+$shellResult = is_null($shellResult)
+  ? "NULL"
+  : str_replace("\n", "<br>", $shellResult);
 
 echoNewLine(false,
   date("l, Y-m-d h:i:s a"),
-  $shellResult
+  $shellResult,
+  $someFunc(""),
+  "BLA",
+  "BLI",
+  "BLUBB"
 );
 ?>
