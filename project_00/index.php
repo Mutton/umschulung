@@ -33,6 +33,7 @@ echoNewLine(false,
   $someFunc(""),
   "BLA",
   "BLI",
-  "BLUBB"
+  "BLUBB",
+  bindec("11111000")
 );
 ?>
